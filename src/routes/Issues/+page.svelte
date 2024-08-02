@@ -1,4 +1,6 @@
 <script>
+	import { Button } from "flowbite-svelte";
+
     export let issues = [
         {
             number: '1',
@@ -16,7 +18,8 @@
             number: '3',
             title: "Echoes of the Morphed",
             image: "/3.jpg",
-            align: 'right'
+            align: 'right',
+            href: "/Issues/Three"
         }
     ];
 </script>
@@ -30,9 +33,9 @@
         <div class="w-[45%] {issue.align === 'left' ? 'text-right' : 'text-left'}">
           <h2 class="text-lg font-semibold mb-2 font-sans text-[#8b4513]">Issue {issue.number}</h2>
           <h1 class="text-4xl font-bold mb-4 font-serif">{issue.title}</h1>
-          <button class="bg-[#8b4513] text-white px-4 py-2 rounded hover:bg-[#724214] transition-colors">
+          <Button class="bg-[#8b4513] text-white px-4 py-2 rounded hover:bg-[#724214] transition-colors" href="/Issues/Three">
             View More
-          </button>
+          </Button>
         </div>
       </div>
     {/each}
