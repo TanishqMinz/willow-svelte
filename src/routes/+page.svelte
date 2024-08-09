@@ -32,7 +32,7 @@
 
 <div class="bg-[url('/pranshu_edited.jpg')] h-[400px] md:h-[729px] w-full bg-cover bg-center bg-no-repeat relative"></div>
 <div class=" h-px[800] w-full relative bg-primary-400 flex justify-center items-center space-y-4 ">
-      <div class=" max-w-4xl w-full  p-8 bg-primary-300 rounded-md shadow-md my-12">
+      <div class=" max-w-[1128px] w-full h-[767px] p-8 bg-primary-300 rounded-md shadow-md my-12">
         <Carousel {images} duration={4000} let:Controls on:change={({detail}) => (image=detail)}>
           <Controls />
         </Carousel>

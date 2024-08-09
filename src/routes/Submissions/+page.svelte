@@ -1,4 +1,4 @@
-<div class="bg-yellow-100 flex flex-col items-center p-8">
+<div class = " bg-[#fee4b3] flex flex-col items-center p-8">
     <h2 class="font-serif text-4xl mb-4 mr-[650px]">SUBMISSIONS</h2>
   
     <div class="max-w-4xl space-y-4">

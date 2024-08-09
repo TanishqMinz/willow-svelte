@@ -1,4 +1,5 @@
 <script>
+	export const prerender = true;
 	import { page } from '$app/stores';
 	import '../app.css';
 	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, FooterIcon } from 'flowbite-svelte';
