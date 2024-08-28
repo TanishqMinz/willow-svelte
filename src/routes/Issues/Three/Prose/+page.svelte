@@ -2,29 +2,8 @@
     import HeadImage from "../../../../lib/components/HeadImage.svelte";
 	import PoetryProseCard from "../../../../lib/components/PoetryProseCard.svelte";
 
-    export const Issues = [
-        {
-            type: "prose",
-            header: "test1",
-            author: "author1",
-            description: "desc1",
-            href: "#"
-        },
-        {
-            type: "prose",
-            header: "test2",
-            author: "author2",
-            description: "desc2",
-            href: "#"
-        },
-        {
-            type: "prose",
-            header: "test2",
-            author: "author2",
-            description: "desc2",
-            href: "#"
-        },
-]
+    export let data
+    const { Issues } = data
 </script>
 
 <div>
