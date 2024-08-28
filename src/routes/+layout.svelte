@@ -1,9 +1,8 @@
 <script>
 	import { page } from '$app/stores';
 	import '../app.css';
-	import { Navbar, NavBrand, NavLi, NavUl, NavHamburger, FooterIcon } from 'flowbite-svelte';
-	import { Button, ButtonGroup } from 'flowbite-svelte';
-	import { Footer, FooterCopyright, FooterLink, FooterLinkGroup } from 'flowbite-svelte';
+	import { FooterIcon } from 'flowbite-svelte';
+	import { Footer, FooterCopyright, FooterLinkGroup } from 'flowbite-svelte';
 	import { InstagramSolid, LinkedinSolid, MailBoxSolid } from 'flowbite-svelte-icons';
 	import { onNavigate } from '$app/navigation';
 

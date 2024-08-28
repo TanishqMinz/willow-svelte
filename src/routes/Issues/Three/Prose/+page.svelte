@@ -4,14 +4,14 @@
 
     export const Issues = [
         {
-            type: "poetry",
+            type: "prose",
             header: "test1",
             author: "author1",
             description: "desc1",
             href: "#"
         },
         {
-            type: "poetry",
+            type: "prose",
             header: "test2",
             author: "author2",
             description: "desc2",
@@ -28,7 +28,7 @@
 </script>
 
 <div>
-    <HeadImage overlayText="testing" imgUrl='/1.jpg' />
+    <HeadImage overlayText="testing" imgUrl='/2.jpg' />
     <div class="flex flex-col items-center justify-center bg-[#785C24]">
         {#each Issues as {type, header, author, description, href}}
             <PoetryProseCard {type} {header} {author} {description} {href} />
