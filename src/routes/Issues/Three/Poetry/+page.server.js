@@ -5,21 +5,21 @@ export const load = async () => {
             header: "test1",
             author: "author1",
             description: "desc1",
-            href: "#"
+            href: "/"
         },
         {
             type: "poetry",
             header: "test2",
             author: "author2",
             description: "desc2",
-            href: "#"
+            href: "/"
         },
         {
             type: "poetry",
             header: "test3",
             author: "author3",
             description: "desc3",
-            href: "#"
+            href: "/"
         },
 ]
     return {

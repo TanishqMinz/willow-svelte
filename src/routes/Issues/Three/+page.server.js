@@ -3,32 +3,32 @@ export const load = async () => {
       {
         header: "Poetry",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare fermentum orci, eget congue diam sollicitudin sed. Lorem ipsum dolor sit amet, consectetur adipiscing.",
-        href: "Three/Poetry"
+        href: "/Issues/Three/Poetry"
       },
       {
         header: "Prose",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare fermentum orci, eget congue diam sollicitudin sed. Lorem ipsum dolor sit amet, consectetur adipiscing.",
-        href: "Three/Prose"
+        href: "/Issues/Three/Prose"
       },
       {
         header: "header1",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare fermentum orci, eget congue diam sollicitudin sed. Lorem ipsum dolor sit amet, consectetur adipiscing.",
-        href: "#"
+        href: "/"
       },
       {
         header: "header1",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare fermentum orci, eget congue diam sollicitudin sed. Lorem ipsum dolor sit amet, consectetur adipiscing.",
-        href: "#"
+        href: "/"
       },
       {
         header: "header1",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare fermentum orci, eget congue diam sollicitudin sed. Lorem ipsum dolor sit amet, consectetur adipiscing.",
-        href: "#"
+        href: "/"
       },
       {
         header: "header1",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare fermentum orci, eget congue diam sollicitudin sed. Lorem ipsum dolor sit amet, consectetur adipiscing.",
-        href: "#"
+        href: "/"
       },
     ];
   
