@@ -1,8 +1,16 @@
 <script>
+    import { base } from '$app/paths'
     import { Carousel } from 'flowbite-svelte';
     import  { Button } from 'flowbite-svelte';
     export let data
-    const { images } = data
+    let { images } = data
+
+    $: images = images.map(img => ({
+      ...img, 
+      src : `${base}${img.src}`,
+      href : `${base}${img.href}`
+    }) )
+
     $: image = images[0]
 </script>
 

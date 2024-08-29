@@ -16,9 +16,9 @@ export const load = async () => {
         },
         {
             type: "prose",
-            header: "test2",
-            author: "author2",
-            description: "desc2",
+            header: "test3",
+            author: "author3",
+            description: "desc3",
             href: "#"
         },
 ]
