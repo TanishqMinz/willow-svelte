@@ -5,6 +5,7 @@
     export let data
     let { images } = data
 
+// Absolute href does not work because of this
     $: images = images.map(img => ({
       ...img, 
       src : `${base}${img.src}`,
