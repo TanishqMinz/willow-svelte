@@ -5,13 +5,14 @@ export const load = async () => {
         src: '/1.jpg',
         title: 'VISUAL ART',
         description: 'A gallery of images, possibly using svelte-lightbox. Links to google currently',
-        href: ''
+        href: '/'
       },
       {
         alt: 'Cristina Gottardi',
         src: '/2.jpg',
         title: 'Placeholder',
-        description: 'yay2'
+        description: 'yay2',
+        href: '/'
       },
       {
         src: '/3.jpg',
