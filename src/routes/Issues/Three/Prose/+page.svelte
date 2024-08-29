@@ -14,7 +14,7 @@
 </script>
 
 <div>
-    <HeadImage overlayText="testing" imgUrl='/2.jpg' />
+    <HeadImage overlayText="testing" imgUrl='{base}/2.jpg' />
     <div class="flex flex-col items-center justify-center bg-[#785C24]">
         {#each Issues as {type, header, author, description, href}}
             <PoetryProseCard {type} {header} {author} {description} {href} />
