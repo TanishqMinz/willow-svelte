@@ -3,19 +3,21 @@ export const load = async () => {
         {
             number: '1',
             title: "Unexplored Spaces",
-            image: "/1.jpg",
-            align: 'right'
+            src: "/1.jpg",
+            align: 'right',
+            href: '/'
         },
         {
             number: '2',
             title: "Alchemy of Warmth",
-            image: "/2.jpg",
-            align: 'left'
+            src: "/2.jpg",
+            align: 'left',
+            href: '/'
         },
         {
             number: '3',
             title: "Echoes of the Morphed",
-            image: "/3.jpg",
+            src: "/3.jpg",
             align: 'right',
             href: "/Issues/Three"
         }

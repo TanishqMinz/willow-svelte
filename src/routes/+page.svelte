@@ -8,7 +8,7 @@
 // Absolute href does not work because of this
     $: images = images.map(img => ({
       ...img, 
-      src : `${base}${img.src}`,
+      src : `${base}${img.src}`,    // Appends base to each json so that it works for github pages
       href : `${base}${img.href}`
     }) )
 

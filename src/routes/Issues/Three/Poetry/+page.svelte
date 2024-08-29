@@ -1,9 +1,16 @@
 <script>
+    import { base } from '$app/paths'
+
     import HeadImage from "../../../../lib/components/HeadImage.svelte";
 	import PoetryProseCard from "../../../../lib/components/PoetryProseCard.svelte";
 
     export let data
-    const { Issues } = data
+    let { Issues } = data
+
+    $: Issues = Issues.map(issue => ({
+        ...issue, 
+        href : `${base}${issue.href}`
+    }))
 </script>
 
 <div>

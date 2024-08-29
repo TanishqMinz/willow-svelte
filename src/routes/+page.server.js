@@ -4,15 +4,15 @@ export const load = async () => {
         alt: 'Cosmic timetraveler',
         src: '/1.jpg',
         title: 'VISUAL ART',
-        description: 'A gallery of images, possibly using svelte-lightbox. Links to google currently',
+        description: 'A gallery of images, possibly using svelte-lightbox. Incomplete',
         href: '/'
       },
       {
         alt: 'Cristina Gottardi',
         src: '/2.jpg',
         title: 'Placeholder',
-        description: 'yay2',
-        href: '/'
+        description: 'Should lead to Interview page of the latest issue',
+        href: '/Issues/Three/Interview'
       },
       {
         src: '/3.jpg',

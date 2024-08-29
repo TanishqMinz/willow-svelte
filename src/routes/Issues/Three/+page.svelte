@@ -1,8 +1,26 @@
 <script>
+    import { base } from '$app/paths'
+
     import { Card, Button } from 'flowbite-svelte'
 
     export let data; 
-    const { CardData, teamMembers, LayoutDesigners } = data;
+    let { CardData, teamMembers, LayoutDesigners } = data;
+
+    $: CardData = CardData.map(data => ({
+      ...data,
+      href : `${base}${data.href}`
+    }))
+    
+    $: teamMembers = teamMembers.map(data => ({
+      ...data,
+      src : `${base}${data.src}`
+    }))
+
+    $: LayoutDesigners = LayoutDesigners.map(data => ({
+      ...data,
+      src : `${base}${data.src}`
+    }))
+
   </script>
   
   <div class="bg-primary-50">
@@ -33,7 +51,7 @@
           <div class="text-center">
             <img
               class="w-32 h-32 rounded-full mx-auto mb-2"
-              src={member.img}
+              src={member.src}
               alt={member.role}
             />
             <h3 class="text-lg font-medium">{member.name}</h3>
@@ -53,7 +71,7 @@
           <div class="text-center">
             <img
               class="w-32 h-32 rounded-full mx-auto mb-2"
-              src={design.img}
+              src={design.src}
               alt="yes"
             />
             <h3 class="text-lg font-medium">{design.name}</h3>
@@ -69,7 +87,7 @@
           <div class="text-center">
             <img
               class="w-32 h-32 rounded-full mx-auto mb-2"
-              src={design.img}
+              src={design.src}
               alt="yes"
             />
             <h3 class="text-lg font-medium">{design.name}</h3>
@@ -85,7 +103,7 @@
           <div class="text-center">
             <img
               class="w-32 h-32 rounded-full mx-auto mb-2"
-              src={design.img}
+              src={design.src}
               alt="yes"
             />
             <h3 class="text-lg font-medium">{design.name}</h3>
