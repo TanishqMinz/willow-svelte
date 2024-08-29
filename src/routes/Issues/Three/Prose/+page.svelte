@@ -1,7 +1,7 @@
 <script>
     import { base } from '$app/paths'
 
-    import HeadImage from "../../../../lib/components/HeadImage.svelte";
+    import ParallaxImage from "../../../../lib/components/ParallaxImage.svelte";
 	import PoetryProseCard from "../../../../lib/components/PoetryProseCard.svelte";
 
     export let data
@@ -14,7 +14,7 @@
 </script>
 
 <div>
-    <HeadImage overlayText="testing" imgUrl='{base}/2.jpg' />
+    <ParallaxImage src="{base}/2.jpg" overlayText="Testing" alt= "yes" height={481} speed={0.5} />
     <div class="flex flex-col items-center justify-center bg-[#785C24]">
         {#each Issues as {type, header, author, description, href}}
             <PoetryProseCard {type} {header} {author} {description} {href} />
