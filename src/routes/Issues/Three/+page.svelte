@@ -1,7 +1,7 @@
 <script>
     import { base } from '$app/paths'
 
-    import { Card, Button } from 'flowbite-svelte'
+    import CustomCard  from '../../../lib/components/CustomCard.svelte'
 
     export let data; 
     let { CardData, teamMembers, LayoutDesigners } = data;
@@ -27,13 +27,7 @@
     <!-- Card Section -->
     <div class="bg-[#bea97e] flex flex-col flex-wrap lg:flex-row justify-between items-center">
       {#each CardData as Data}
-        <Card class="my-4 mx-12 flex items-center justify-center">
-          <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900">{Data.header}</h5>
-          <p class="mb-3 font-normal text-gray-700 leading-tight">{Data.description}</p>
-          <Button class="w-fit" href={Data.href}>
-            View
-          </Button>
-        </Card>
+        <CustomCard header = {Data.header} text={Data.description} buttonHref={Data.href} />
       {/each}
     </div>
   
