@@ -7,6 +7,12 @@
 	import { Footer, FooterCopyright, FooterLinkGroup } from 'flowbite-svelte';
 	import { InstagramSolid, LinkedinSolid, MailBoxSolid } from 'flowbite-svelte-icons';
 
+	let isOpen = false;
+
+	const toggleMenu = () => {
+  		isOpen = !isOpen;
+	};
+
 	// Reactive variable for the active URL
 	$: activeUrl = $page.url.pathname;
 	let activeClass = 'text-primary-600 bg-primary-200 ';
@@ -24,23 +30,50 @@
 	});
 </script>
 
-<nav class=" bg-primary-600 p-4 justify-between items-center hidden lg:flex">
-	<ul class="flex space-x-0 ml-72">
-		<li class="uppercase font-serif">
-			<a href="{base}/" class={`flex items-center justify-center w-[100px] h-[30px] ${activeUrl === '/' ? activeClass : nonActiveClass}`}>Home</a>
-		</li>
-		<li class="uppercase font-serif">
-			<a href="{base}/About-Us" class={`flex items-center justify-center w-[100px] h-[30px]  ${activeUrl === '/About-Us' ? activeClass : nonActiveClass}`}>About</a>
-		</li>
-		<li class="uppercase font-serif">
-			<a href="{base}/Issues" class={`flex items-center justify-center w-[100px] h-[30px]  ${activeUrl === '/Issues' ? activeClass : nonActiveClass}`}>Issues</a>
-		</li>
-		<li class="uppercase font-serif">
-			<a href="{base}/Submissions" class={`flex items-center justify-center w-[140px] h-[30px] p-4  ${activeUrl === '/Submissions' ? activeClass : nonActiveClass}`}>Submissions</a>
-		</li>
+<nav class="bg-primary-600 p-4 flex justify-between items-center lg:flex">
+
+	<div class="lg:hidden">
+	  <button on:click={toggleMenu} aria-label="Toggle menu" class="text-primary-200 focus:outline-none">
+		<svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+		  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+		</svg>
+	  </button>
+	</div>
+
+	<ul class="hidden lg:flex space-x-0 ml-72">
+	  <li class="uppercase font-serif">
+		<a href="{base}/" class={`flex items-center justify-center w-[100px] h-[30px] ${activeUrl === '/' ? activeClass : nonActiveClass}`}>Home</a>
+	  </li>
+	  <li class="uppercase font-serif">
+		<a href="{base}/About-Us" class={`flex items-center justify-center w-[100px] h-[30px]  ${activeUrl === '/About-Us' ? activeClass : nonActiveClass}`}>About</a>
+	  </li>
+	  <li class="uppercase font-serif">
+		<a href="{base}/Issues" class={`flex items-center justify-center w-[100px] h-[30px]  ${activeUrl === '/Issues' ? activeClass : nonActiveClass}`}>Issues</a>
+	  </li>
+	  <li class="uppercase font-serif">
+		<a href="{base}/Submissions" class={`flex items-center justify-center w-[140px] h-[30px] p-4  ${activeUrl === '/Submissions' ? activeClass : nonActiveClass}`}>Submissions</a>
+	  </li>
 	</ul>
-	<a href="{base}/" class="mr-72"><img src="{base}/willow tree_edited.jpg" alt="Logo" class="rounded-full w-20"></a>
-</nav>
+
+	<a href="{base}/" class="lg:mr-72">
+		<img src="{base}/willow tree_edited.jpg" alt="Logo" class="rounded-full w-20">
+	</a>
+  
+	<ul class={`flex-col mt-4 space-y-2 lg:hidden ${isOpen ? 'flex' : 'hidden'}`}>
+	  <li class="uppercase font-serif">
+		<a href="{base}/" class={`flex items-center justify-center w-full h-[40px] ${activeUrl === '/' ? activeClass : nonActiveClass}`}>Home</a>
+	  </li>
+	  <li class="uppercase font-serif">
+		<a href="{base}/About-Us" class={`flex items-center justify-center w-full h-[40px] ${activeUrl === '/About-Us' ? activeClass : nonActiveClass}`}>About</a>
+	  </li>
+	  <li class="uppercase font-serif">
+		<a href="{base}/Issues" class={`flex items-center justify-center w-full h-[40px] ${activeUrl === '/Issues' ? activeClass : nonActiveClass}`}>Issues</a>
+	  </li>
+	  <li class="uppercase font-serif">
+		<a href="{base}/Submissions" class={`flex items-center justify-center w-full h-[40px] ${activeUrl === '/Submissions' ? activeClass : nonActiveClass}`}>Submissions</a>
+	  </li>
+	</ul>
+  </nav>
 
 <main>	
 	<slot/>
