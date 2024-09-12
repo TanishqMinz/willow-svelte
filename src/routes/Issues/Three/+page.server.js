@@ -1,6 +1,11 @@
 export const load = async () => {
     const CardData = [
       {
+        header: "Visual Art",
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare fermentum orci, eget congue diam sollicitudin sed. Lorem ipsum dolor sit amet, consectetur adipiscing.",
+        href: "/Issues/Three/Gallery"
+      },
+      {
         header: "Poetry",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare fermentum orci, eget congue diam sollicitudin sed. Lorem ipsum dolor sit amet, consectetur adipiscing.",
         href: "/Issues/Three/Poetry"
@@ -9,11 +14,6 @@ export const load = async () => {
         header: "Prose",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare fermentum orci, eget congue diam sollicitudin sed. Lorem ipsum dolor sit amet, consectetur adipiscing.",
         href: "/Issues/Three/Prose"
-      },
-      {
-        header: "header1",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ornare fermentum orci, eget congue diam sollicitudin sed. Lorem ipsum dolor sit amet, consectetur adipiscing.",
-        href: "/"
       },
       {
         header: "header1",

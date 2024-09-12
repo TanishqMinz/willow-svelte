@@ -5,7 +5,7 @@ export const load = async () => {
         src: '/1.jpg',
         title: 'VISUAL ART',
         description: 'A gallery of images, possibly using svelte-lightbox. Incomplete',
-        href: '/'
+        href: '/Issues/Three/Gallery'
       },
       {
         alt: 'Cristina Gottardi',
