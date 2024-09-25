@@ -5,7 +5,7 @@
     export let header
     export let author
     export let description
-    export let buttonHref = "/"
+    export let href 
     export let buttonColor = "bg-[#5e4a2e]"
     export let buttonText = "View More"
 </script>
@@ -15,7 +15,7 @@
     <h6 class="text-base font-sans {type == 'poetry' ? 'ml-96' : '' } ">{author}</h6>
     <p class="mb-3 font-normal text-gray-700 leading-tight">{description}</p>
     <a 
-    href={buttonHref} 
+    href={href} 
     class={`${buttonColor} text-white py-2 px-6 inline-block hover:opacity-90 transition-opacity`}
   >
     {buttonText}

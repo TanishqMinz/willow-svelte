@@ -2,17 +2,17 @@ export const load = async () => {
     const Issues = [
         {
             type: "poetry",
-            header: "test1",
-            author: "author1",
+            header: "Sonnet 18",
+            author: "Shakespeare",
             description: "desc1",
-            href: "/"
+            href: "/Issues/Three/Poetry/sonnet-18"
         },
         {
             type: "poetry",
-            header: "test2",
-            author: "author2",
+            header: "The Raven",
+            author: "Shakespeare",
             description: "desc2",
-            href: "/"
+            href: "/Issues/Three/Poetry/the-raven"
         },
         {
             type: "poetry",
